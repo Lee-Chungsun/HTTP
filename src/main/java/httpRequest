@@ -23,7 +23,7 @@ String stringParam = new GsonBuilder().create().toJson( param, Map.class );
 // com.google.gson.GsonBuilder.GsonBuilder()
 BufferedWriter bw = new BufferedWriter(new OutputStreamWriter( os, "UTF-8") );
 bw.write( stringParam ); // json으로 만든 parameter를 넘긴당
-bw.flush(); // 오류난 줄알고 추가했는데 없어도 되나보다..
+bw.flush();
 bw.close();
 os.close();
 
