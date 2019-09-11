@@ -2,7 +2,7 @@ public String forceCall(HttpServletRequest request, HttpServletResponse response
   // request로 받고 reponse로 응답해준다.
   JSONParser jsonParser = new JSONParser();
   JSONObject jsonObject = (JSONObject) jsonParser.parse(requstBody(request));
-  //json을 읽기 위한? 파싱하는 거같다.
+  //json을 읽기 위한? 파싱
   //requstBody 함수는 아래쪽에 있는 함수
   jsonObject.get("key").toString();
   // 이렇게 get("key")값으로 가져올수 있게된다.
