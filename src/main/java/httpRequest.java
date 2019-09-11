@@ -4,7 +4,7 @@ String url = "url 주소";
 URL url = new URL( url );
 HttpURLConnection conn = (HttpURLConnection)url.openConnection();
 			 
-conn.setDoOutput(true); //아직 모르겠음..
+conn.setDoOutput(true);
 conn.setRequestProperty("Content-Type", "application/json"); 
 // json형태로 전송(파라미터)
 conn.setRequestProperty("Accept", "application/xml");
